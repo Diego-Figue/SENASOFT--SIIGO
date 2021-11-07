@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Encuentra el Bug en el Sistema</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vista/css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.socket.io/4.3.2/socket.io.min.js" integrity="sha384-KAZ4DtjNhLChOB/hxXuKqhMLYvx3b5MlT55xPEiNmREKRzeEm+RVPlTnAn0ajQNs" crossorigin="anonymous"></script>
+
+    <script src="vista/js/juegoCrear.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="wave1"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C25.11,60.69 482.78,-53.78 500.00,49.98 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: #D82B2E;"></path></svg></div>
+        <div class="wave2"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.28,131.73 C182.56,189.95 481.65,24.17 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #D82B2E;"></path></svg></div>
+        <div class="col-sm-12 panel">
+            <h1 class="titulo">Encuentra El Bug En El Sistema</h1>
+            <div class="col-sm-6 imagenes">
+                <img class="img" src="vista/img/control.svg" alt="">
+            </div>
+            <div class="col-sm-6 botones">
+                <form class="form">
+                    <input class="usuario" type="text" id="txtUsuario" placeholder=" ">
+                    <label for="txtUsuario" class="labelUsuario">Usuario</label>
+                    <span class="lineUsuario"></span>
+                </form>
+                <button type="button" class="btn" id="btnCrear">Crear Partida</button>
+                <h1 class="titulo2">Ingresa Un Codigo Para Unirte A Una Sala</h1>
+                <form class="form">
+                    <input class="unirse" type="text" id="txtUnirse" placeholder=" ">
+                    <label for="txtUnirse" class="label">Ingresar Codigo</label>
+                    <span class="line"></span>
+                </form>
+                <button type="button" class="btn" id="btnUnirse">Unirse A La Partida</button>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
